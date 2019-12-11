@@ -1,0 +1,383 @@
+@import url("https://fonts.googleapis.com/css?family=Sulphur+Point&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Utilities class */
+body {
+  font-family: "Sulphur Point", sans-serif;
+  overflow-x: hidden;
+}
+.container {
+  max-width: 1100px;
+  margin: auto;
+}
+.text-primary {
+  color: #31417c;
+}
+.lead {
+  font-size: 20px;
+}
+
+.btn {
+  border-radius: 5px;
+  padding: 20px;
+  color: #ddd;
+  text-decoration: none;
+  background: #4b8e38;
+  border: none;
+  display: block;
+  width: 200px;
+}
+.btn:hover {
+  background: #66965a;
+}
+.btn-light {
+  background: #5eb347;
+  text-align: center;
+}
+.bg-primary {
+  background: #ddd;
+}
+.bg-primary-op {
+  background: #ddd;
+  opacity: 0.9;
+}
+.bg-dark {
+  background: #4b8e38;
+}
+.current {
+  background: #66965a;
+}
+/* Main classes */
+.main-header {
+  height: 100vh;
+}
+#navbar {
+  background: #417c31;
+  overflow: hidden;
+  min-height: 50px;
+}
+.logo {
+  margin: auto 0;
+}
+.logo a {
+  text-decoration: none;
+  color: #ddd;
+  float: left;
+  padding: 0 10px;
+  letter-spacing: 2px;
+  font-size: 2rem;
+  margin-top: 15px;
+  margin-bottom: auto;
+}
+#navbar ul {
+  float: right;
+}
+#navbar ul li {
+  display: inline-block;
+  text-align: center;
+  padding: 20px;
+}
+#navbar ul li a {
+  text-decoration: none;
+  color: #ddd;
+  font-size: 1.3rem;
+}
+#navbar ul li:hover {
+  background: #66965a;
+  cursor: pointer;
+}
+#navbar ul li:hover a {
+  color: #31417c;
+}
+/* Showcase */
+#showcase {
+  background: url(imgs/light-road-landscape-nature-35600.jpg) no-repeat center
+    center/cover;
+  height: 100%;
+  min-height: 500px;
+}
+#showcase .showcase-content {
+  color: #fff;
+  text-align: center;
+  padding-top: 160px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+#showcase .showcase-content h1 {
+  font-size: 60px;
+  line-height: 1.2rem;
+}
+#showcase .showcase-content p {
+  width: 60%;
+  margin: 50px auto;
+  line-height: 1.7rem;
+}
+#home-info {
+  display: flex;
+  width: 100vw;
+}
+.info-img {
+  flex: 1;
+  background: url(imgs/forest-with-sunlight-158251.jpg) no-repeat center
+    center/cover;
+}
+.info-content {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  padding: 40px;
+  background: #ddd;
+}
+.info-content p {
+  margin: 30px;
+  font-size: 17px;
+  line-height: 1.7rem;
+  padding-bottom: 40px;
+}
+/* Features */
+#features {
+  display: flex;
+}
+.tree {
+  color: #4b8e38;
+}
+.plant {
+  color: #384b8e;
+}
+.animal {
+  color: #8e384b;
+}
+#features .box {
+  width: 100vw;
+  padding: 30px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+#features .box i {
+  margin: 20px;
+  cursor: pointer;
+  transition: all 0.4s ease-in;
+}
+#features .box i:hover {
+  transform: scale(1.1);
+}
+#features .box p {
+  width: 60%;
+  text-align: center;
+}
+/* About */
+#about-info .container {
+  display: flex;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+#about-info .info-left {
+  width: 65%;
+}
+#about-info .info-left h1 {
+  text-align: center;
+  padding: 10px;
+  font-size: 30px;
+}
+#about-info .info-left p {
+  padding: 15px 20px 5px 20px;
+}
+#about-info .info-right {
+  width: 35%;
+}
+#about-info .info-right img {
+  display: block;
+  width: 100%;
+  border-radius: 50%;
+}
+/* Testimonials */
+#testimonials .container {
+  background: url(imgs/green-pine-trees-1179229.jpg) no-repeat center
+    center/cover;
+  min-height: 900px;
+  padding: 20px;
+}
+
+#testimonials h2 {
+  padding: 20px;
+  text-align: center;
+  color: #000;
+  background: #fff;
+}
+#testimonials .testimonial {
+  display: flex;
+  flex-direction: row;
+  padding: 30px;
+  margin: 50px auto;
+  width: 85%;
+}
+#testimonials .testimonial .img-person {
+  width: 20%;
+  margin-top: auto;
+  margin-bottom: auto;
+}
+#testimonials .testimonial .img-person img {
+  display: block;
+  width: 100%;
+  border-radius: 50%;
+  margin: auto;
+}
+#testimonials .testimonial p {
+  width: 80%;
+  padding: 30px;
+  margin: auto;
+}
+/* Contact Form */
+#contact-form {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+}
+#contact-form .container h1 {
+  text-align: center;
+  padding: 20px;
+}
+#contact-form .container p {
+  padding: 20px;
+}
+#contact-form form {
+  width: 100%;
+  margin: 10px auto;
+
+  display: flex;
+  flex-direction: column;
+}
+#contact-form form button {
+  margin: 0 auto;
+}
+#contact-form .form-group {
+  margin-bottom: 20px;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+#contact-form .form-group input,
+#contact-form .form-group textarea {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ddd;
+}
+#contact-form .form-group textarea {
+  height: 200px;
+}
+#contact-form .form-group input:focus,
+#contact-form .form-group textarea:focus {
+  outline: none;
+  border-color: #7b388e;
+}
+#contact-form label {
+  display: block;
+}
+/* Contact info */
+#contact-info .container {
+  display: flex;
+  margin-top: 40px;
+  flex-direction: row;
+}
+#contact-info .box {
+  flex: 1;
+  padding: 30px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+#contact-info .box i {
+  margin: 20px;
+  cursor: pointer;
+  transition: all 0.4s ease-in;
+}
+#contact-info .box i:hover {
+  transform: scale(1.1);
+}
+#contact-info .box p {
+  width: 60%;
+  text-align: center;
+}
+/* Footer */
+footer {
+  width: 100vw;
+  text-align: center;
+  padding: 10px;
+  background: #0f1c0b;
+  color: #fff;
+}
+@media (max-width: 768px) {
+  #showcase .showcase-content h1 {
+    font-size: 50px;
+  }
+  #showcase .showcase-content p {
+    width: 80%;
+    text-align: justify;
+  }
+  .info-img {
+    display: none;
+  }
+  .info-content p {
+    text-align: center;
+  }
+  #features {
+    flex-direction: column;
+  }
+  #about-info .container {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+  #testimonials .testimonial {
+    flex-direction: column;
+  }
+  #testimonials .testimonial .img-person {
+    margin-left: auto;
+    margin-right: auto;
+  }
+  #testimonials .testimonial p {
+    text-align: center;
+  }
+
+  #contact-info .container {
+    flex-direction: column;
+  }
+}
+
+@media (max-width: 500px) {
+  #navbar ul li {
+    padding: 15px 5px;
+  }
+  #showcase .showcase-content {
+    padding-top: 100px;
+  }
+  #showcase .showcase-content h1 {
+    font-size: 40px;
+  }
+  #showcase .showcase-content p {
+    width: 80%;
+  }
+  .info-content p {
+    width: 100%;
+  }
+  #testimonials .testimonial {
+    width: 95%;
+  }
+  #testimonials .testimonial p {
+    width: 100%;
+    padding: 10px 0 0 0;
+  }
+}

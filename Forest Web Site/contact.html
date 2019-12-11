@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>About</title>
+    <link rel="stylesheet" href="style.css" />
+    
+  </head>
+  <body>
+    <header >
+      <nav id="navbar">
+        <div class="container">
+          <h1 class="logo"><a href="index.html">HLP</a></h1>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li class="current"><a href="contact.html">Contact</a></li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+
+    <section id="contact-form">
+      <div class="container">
+        <h1><span class="text-primary">Contact</span> Us</h1>
+        <p>Please fill out the form below to contact us</p>
+        <form action="process.php">
+          <div class="form-group">
+            <label for="name">Name</label>
+            <input type="name" name="name" id="name" />
+          </div>
+          <div class="form-group">
+            <label for="email">Email</label>
+            <input type="email" name="email" id="email" />
+          </div>
+          <div class="form-group">
+            <label for="message">Message</label>
+            <textarea name="message" id="message"></textarea>
+          </div>
+          <button type="submit" class="btn">Submit</button>
+        </form>
+      </div>
+    </section>
+
+    <section id="contact-info" class="bg-dark">
+        <div class="container">
+            <div class="box">
+                    <h2>Location</h2>
+                    <i class="fas fa-map-signs fa-5x three"></i>
+                    <p>
+                      50 Main st, Xxxxx MS
+                    </p>
+                  </div>
+                  <div class="box bg-dark">
+                    <h2 class="plant">Phone Number</h2>
+                    <i class="fas fa-phone fa-5x plant"></i></i>
+                    <p>
+                     +48 666-666-666
+                    </p>
+                  </div>
+                  <div class="box">
+                    <h2 class="animal">Email</h2>
+                    <i class="fas fa-envelope fa-5x animal"></i>
+                    <p>
+                      forest@forest.com
+                  </div>
+                </div>
+    </section>
+
+    <footer id="main-footer">
+      <p>Forest HLP &copy 2019 All Rights Reserved</p>
+    </footer>
+    <script
+      src="https://kit.fontawesome.com/27497a9bbb.js"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
