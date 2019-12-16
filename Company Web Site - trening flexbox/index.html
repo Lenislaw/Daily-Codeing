@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="stylesheet" href="style.css" />
+    <script
+      src="https://kit.fontawesome.com/27497a9bbb.js"
+      crossorigin="anonymous"
+    ></script>
+    <title>Flexbox - training</title>
+  </head>
+  <body>
+    <!-- nav bar -->
+    <nav id="navbar">
+      <h1 class="logo">
+        <span class="text-primary"> <i class="fas fa-book-open"></i>Edge </span
+        >Ledger
+      </h1>
+      <ul>
+        <li><a href="#home">Home</a></li>
+        <li><a href="#what">What</a></li>
+        <li><a href="#who">Who</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+    <!-- Header -->
+    <header id="showcase">
+      <div id="home" class="showcase-content">
+        <h1 class="l-heading">
+          The Sky is The Limit
+        </h1>
+        <p class="lead">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed quia
+          accusamus blanditiis rerum error, facere iste quam quas asperiores
+          deleniti inventore officia quisquam iusto exercitationem tenetur!
+          Voluptatibus, illum, nesciunt, laboriosam reprehenderit quisquam
+          numquam repellendus porro quis deserunt iure vitae officiis aut totam
+          fugiat sequi doloribus iste ullam odit tenetur sapiente?
+        </p>
+        <a href="#what" class="btn">Read More</a>
+      </div>
+    </header>
+    <!-- Section: What we Do -->
+    <section id="what" class="bg-light py-1">
+      <div class="container text-center">
+        <h2 class="m-heading"><span class="text-primary">What</span> We Do</h2>
+        <div class="items">
+          <div class="item">
+            <i class="fas fa-university fa-2x"></i>
+            <div>
+              <h3>Investment Banking</h3>
+              <p>
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                Mollitia nam fugiat vel. Amet quam distinctio dolorum eum magnam
+                sapiente minima.
+              </p>
+            </div>
+          </div>
+          <div class="item">
+            <i class="fas fa-book-reader fa-2x"></i>
+            <div>
+              <h3>Portfolio Managment</h3>
+              <p>
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                Mollitia nam fugiat vel. Amet quam distinctio dolorum eum magnam
+                sapiente minima.
+              </p>
+            </div>
+          </div>
+          <div class="item">
+            <i class="fas fa-pencil-alt fa-2x"></i>
+            <div>
+              <h3>Tax & Papers</h3>
+              <p>
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                Mollitia nam fugiat vel. Amet quam distinctio dolorum eum magnam
+                sapiente minima.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Section: Who We Are -->
+    <section id="who">
+      <div class="who-img"></div>
+      <div class="who-text bg-dark p-2">
+        <h2 class="m-heading"><span class="text-primary">Who</span> We Are</h2>
+        <p>
+          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Consectetur
+          atque omnis, laboriosam labore ducimus quis ipsam sapiente voluptate
+          laudantium voluptates corrupti nesciunt dolorum! Nam ut cumque quos
+          quod, deserunt quas.
+        </p>
+        <h3>Our Team</h3>
+        <ul class="list">
+          <li>XXX XXX: CEO</li>
+          <li>XXX XXX: CFO</li>
+          <li>XXX XXX: Lead Accountant</li>
+          <li>XXX XXX: Investment Menager</li>
+          <li>XXX XXX: Senior Accountant</li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- Section: Clients -->
+    <section id="clients" class="py-1">
+      <div class="container">
+        <h2 class="m-heading text-center">
+          <span class="text-primary">Our</span> Clients
+        </h2>
+        <div class="items p-1">
+          <div class="p-1"><img src="imgs/logo1.png" alt="Client" /></div>
+          <div class="p-1"><img src="imgs/logo2.png" alt="Client" /></div>
+          <div class="p-1"><img src="imgs/logo3.png" alt="Client" /></div>
+          <div class="p-1"><img src="imgs/logo4.png" alt="Client" /></div>
+          <div class="p-1"><img src="imgs/logo5.png" alt="Client" /></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Section: Concact -->
+    <section id="contact">
+      <div class="contact-form bg-primary p-2">
+        <h2 class="m-heading">Concact Us</h2>
+        <p>Please use the form below to contact us</p>
+        <form>
+          <div class="form-group">
+            <label for="name">Name</label>
+            <input type="text" name="name" id="name" placeholder="Enter Name" />
+          </div>
+          <div class="form-group">
+            <label for="emial">Emial</label>
+            <input
+              type="text"
+              name="email"
+              id="email"
+              placeholder="Enter Email"
+            />
+          </div>
+          <div class="form-group">
+            <label for="phone">Phone Number</label>
+            <input
+              type="text"
+              name="phone"
+              id="phone"
+              placeholder="Enter Phone Number"
+            />
+          </div>
+          <div class="form-group">
+            <label for="message">Message</label>
+            <textarea
+              name="message"
+              id="message"
+              placeholder="Enter Message"
+            ></textarea>
+          </div>
+          <input type="submit" value="Send" class="btn btn-dark btn-short" />
+        </form>
+      </div>
+      <div class="map">
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d4214.153347737447!2d17.018736246983558!3d51.094610561353996!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1spl!2spl!4v1576155807642!5m2!1spl!2spl"
+          frameborder="0"
+          style="border:0;"
+          allowfullscreen=""
+        ></iframe>
+      </div>
+    </section>
+    <!-- Footer -->
+    <footer id="main-footer" class="bg-dark text-center py-1">
+      <div class="container">
+        <p>Copyright &copy; 2019, EdgeLedger, All Rights Reserved</p>
+      </div>
+    </footer>
+    <script src="js.js"></script>
+  </body>
+</html>

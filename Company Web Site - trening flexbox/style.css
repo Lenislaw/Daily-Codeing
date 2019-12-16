@@ -1,0 +1,386 @@
+@import url("https://fonts.googleapis.com/css?family=Roboto&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  height: 200vh;
+  line-height: 1.4;
+}
+
+a {
+  text-decoration: none;
+}
+
+p {
+  margin: 0.75rem 0;
+}
+
+.container {
+  max-width: 1100px;
+  margin: auto;
+  padding: 0 2rem;
+  overflow: hidden;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.text-primary {
+  color: #1580ec;
+}
+
+.bg-light {
+  background: #f4f4f4;
+  color: #333;
+}
+
+.bg-dark {
+  background: #333;
+  color: #fff;
+}
+
+.bg-primary {
+  background: #1580ec;
+  color: #fff;
+}
+
+.l-heading {
+  font-size: 4rem;
+  margin-bottom: 0.75rem;
+  line-height: 1.1;
+}
+
+.m-heading {
+  font-size: 2rem;
+  margin-bottom: 0.75rem;
+  line-height: 1.1;
+}
+
+.lead {
+  font-size: 1.3rem;
+  margin-bottom: 2rem;
+}
+
+.py-1 {
+  padding: 1.5rem 0;
+}
+
+.py-2 {
+  padding: 2rem 0;
+}
+
+.py-3 {
+  padding: 3rem 0;
+}
+
+.p-1 {
+  padding: 1.5rem;
+}
+
+.p-2 {
+  padding: 2rem;
+}
+
+.p-3 {
+  padding: 3rem;
+}
+
+.btn {
+  display: inline-block;
+  color: #fff;
+  background: #1580ec;
+  padding: 0.5rem 2rem;
+  border-radius: 5px;
+  border: none;
+}
+
+.btn:hover {
+  background: #116ecd;
+}
+
+.btn-dark {
+  background: #333;
+  color: #fff;
+  cursor: pointer;
+}
+
+.btn-dark:hover {
+  background: #262626;
+}
+
+.list {
+  margin: 0.5rem 0;
+  list-style: none;
+}
+
+.list li {
+  padding: 0.5rem 0;
+  border-bottom: #444 dotted 1px;
+}
+
+#navbar {
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+  background: #333;
+  color: #fff;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  z-index: 100;
+  padding: 1rem;
+}
+
+#navbar ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  list-style: none;
+}
+
+#navbar ul li a {
+  color: #fff;
+  padding: 0.75rem;
+  margin: 0 0.25rem;
+}
+
+#navbar ul li a:hover {
+  background: #1580ec;
+  border-radius: 5px;
+}
+
+#showcase {
+  background: #333 url(imgs/buildings-city-cityscape-dark-417192.jpg) no-repeat center center/cover;
+  height: 96vh;
+  color: #fff;
+}
+
+#showcase .showcase-content {
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  text-align: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 0 2rem;
+  position: absolute;
+  top: 31px;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+#what .items {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 1rem;
+}
+
+#what .items .item {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  text-align: center;
+  padding: 1rem;
+}
+
+#what .items .item i {
+  background: #1580ec;
+  padding: 1rem;
+  border-radius: 50%;
+}
+
+#who {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+#who div {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+}
+
+#who .who-img {
+  background: url(imgs/woman-standing-on-the-center-table-with-four-people-on-the-1367271.jpg) no-repeat center center/cover;
+}
+
+#clients .items {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+#clients .items img {
+  display: block;
+  margin: auto;
+  width: 100%;
+}
+
+#contact {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+#contact .map {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+}
+
+#contact .map iframe {
+  width: 100%;
+  height: 100%;
+}
+
+#contact .contact-form {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+}
+
+#contact .contact-form .form-group {
+  margin: 0.75rem;
+}
+
+#contact .contact-form .form-group label {
+  display: block;
+}
+
+#contact .contact-form input,
+#contact .contact-form textarea {
+  width: 100%;
+  padding: 1.5px;
+}
+
+#contact .contact-form .btn-short {
+  width: 30%;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  outline: none;
+}
+
+@media (max-width: 768px) {
+  #what .items {
+    display: block;
+  }
+  #what .items .item {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  #what .items .item i {
+    -ms-flex-item-align: center;
+        -ms-grid-row-align: center;
+        align-self: center;
+    margin-top: 20px;
+  }
+  #what .items .item p {
+    text-align: start;
+    padding: 1.5rem;
+    margin: 0 auto;
+  }
+  #contact .map {
+    -webkit-box-flex: 2;
+        -ms-flex: 2;
+            flex: 2;
+  }
+}
+
+@media (max-width: 500px) {
+  .l-heading {
+    font-size: 3rem;
+  }
+  .lead {
+    font-size: 1rem;
+  }
+  #navbar {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  #navbar .logo {
+    margin-bottom: 0.5rem;
+    text-align: center;
+  }
+  #navbar ul {
+    padding: 0.5rem;
+  }
+  #showcase .showcase-content {
+    top: 83px;
+  }
+  #who {
+    display: block;
+  }
+  #who .who-img {
+    display: none;
+  }
+  #clients .items img {
+    width: 80%;
+  }
+  #clients .items div {
+    padding: 0;
+  }
+  #clients .items div:last-child {
+    display: none;
+  }
+  #contact {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  #contact .map {
+    height: 200px;
+    border-top: 4px solid #333;
+  }
+}
+
+@media (max-height: 568px) {
+  #showcase .showcase-content {
+    margin-top: -2rem;
+    top: 120px;
+  }
+  .l-heading {
+    font-size: 3rem;
+  }
+  .lead {
+    font-size: 1rem;
+  }
+  #what .items .item p {
+    padding: 1rem;
+    width: 140%;
+  }
+  #what .items .item i {
+    margin-left: -30px;
+  }
+}
+/*# sourceMappingURL=style.css.map */
