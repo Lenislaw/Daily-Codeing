@@ -1,0 +1,161 @@
+@import url("https://fonts.googleapis.com/css?family=Lato&display=swap");
+
+$bg-dark: #002d5f;
+$bg-white: #fff;
+$mian-font: "Lato", sans-serif;
+$color-lightgrey: #9a9a9a;
+$color-lightblue: #7f96af;
+$btn-color: #002d5f;
+$alert-color: #ED4F32;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+%input {
+  display: block;
+  line-height: 1.5rem;
+  margin-bottom: 0.6rem;
+  outline: none;
+  border: 1px solid $color-lightgrey;
+}
+
+.bg-dark {
+  background-color: $bg-dark;
+}
+
+body {
+  font-family: "Lato", sans-serif;
+
+  .container {
+    background: $bg-white;
+    max-width: 500px;
+    margin: 50px auto;
+    border-radius: 5px;
+
+    .card {
+      padding: 1rem;
+      .heading {
+        padding: 1rem 1rem 1.5rem 1rem;
+        margin: 0 auto;
+        text-align: center;
+      }
+      #loan-form {
+        .form-group {
+          .input-group {
+            display: flex;
+
+            .input-group-addon {
+              border: 1px solid $color-lightgrey;
+              border-right: none;
+              background: $color-lightblue;
+              width: 10%;
+              border-radius: 5px 0px 0px 5px;
+              margin-bottom: 0.6rem;
+              padding: 0.3rem 0.5rem;
+              text-align: center;
+            }
+            input {
+              @extend %input;
+              padding: 0.2rem;
+              width: 90%;
+              border-radius: 0 5px 5px 0;
+            }
+          }
+          #years {
+            @extend %input;
+            padding: 0.3rem 0.5rem;
+            border-radius: 5px;
+            width: 100%;
+          }
+          .btn {
+            display: block;
+            outline: none;
+            width: 100%;
+            padding: 0.7rem 0.7rem;
+            color: #fff;
+            background: $btn-color;
+            border: none;
+            border-radius: 5px;
+            font-size: 1.2rem;
+            cursor: pointer;
+            margin-top: 1.5rem;
+            margin-bottom: 1.5rem;
+            &:hover {
+              background: lighten($btn-color, 10%);
+            }
+          }
+        }
+      }
+      .alert{
+        border:1px solid $alert-color;
+        width:80%;
+        padding:0.4rem;
+        text-align: center;
+        margin-left:auto;
+        margin-right:auto;
+        border-radius:5px;
+        color:$alert-color;
+        background:lighten($alert-color,30%);
+      }
+      #loading {
+        width: 200px;
+        margin: 0 auto;
+        display:none;
+      }
+      #results {
+        display:none;
+        h4 {
+          text-align: center;
+          padding: 0.5rem;
+          margin-bottom: 0.8rem;
+        }
+        .form-group {
+          .input-group {
+            display: flex;
+            margin-bottom: 0.8rem;
+            .input-group-addon {
+              display: block;
+              width: 50%;
+            }
+            input {
+              display: block;
+              width: 50%;
+              border-radius: 5px;
+              padding:0.3rem;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+@media (max-width: 768px) {
+  body {
+    .container {
+      max-width: 500px;
+    }
+  }
+}
+
+@media (max-width: 500px) {
+  .bg-dark {
+    background: #fff;
+  }
+  body {
+    .container {
+      margin: 0 auto;
+      max-width: 320px;
+      .card {
+        padding: 0;
+      }
+    }
+  }
+}
+@media (max-width: 320px) {
+  body {
+    .container {
+      max-width: 300px;
+    }
+  }
+}
