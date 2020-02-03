@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="stylesheet" href="style.css" />
+    <script
+      src="https://kit.fontawesome.com/27497a9bbb.js"
+      crossorigin="anonymous"
+    ></script>
+    <title>
+      Kontroler przychodów i wydatków
+    </title>
+  </head>
+  <body>
+    <div class="container">
+      <div id="heading">
+        <h1 class="title-main">
+          Kontroler przychodów i wydatków
+        </h1>
+        <i class="fas fa-calculator fa-4x"> </i>
+      </div>
+      <div class="form-box">
+        <form id="form-main">
+          <div class="input-box">
+            <div class="input">
+              <label for="amount">Ilość</label>
+              <input
+                type="number"
+                autocomplete="off"
+                name="amount"
+                id="amount"
+                min="1"
+                placeholder="Kwota transakcji w PLN"
+              />
+            </div>
+            <div class="input">
+              <label for="select-type">Typ</label>
+              <select name="type" id="select-type">
+                <option value="expend" selected>Wydatek</option>
+                <option value="income">Dochód</option>
+              </select>
+            </div>
+            <div class="input-type type-off " id="select-type-income">
+              <label for="income-list">Rodzaj</label>
+              <select name="type" id="income-list">
+                <option value="salary">Z pracy najemnej</option>
+                <option value="own-business">
+                  Z pracy na własny rachunk
+                </option>
+                <option value="sale">Sprzedaż dobra/usługi</option>
+                <option value="social-benefit">Świadczenie</option>
+                <option value="award">Nagroda</option>
+                <option value="financial">Instrument finansowy</option>
+                <option value="real-estate">Nieruchomości</option>
+                <option value="other">Inne</option>
+              </select>
+            </div>
+            <div class="input-type " id="select-type-expand">
+              <label for="expend-list">Rodzaj</label>
+              <select name="type" id="expend-list">
+                <option value="food">Wyżywienie</option>
+                <option value="bills">Czynsz/Opłaty domowe</option>
+                <option value="agd-rtv">AGD RTV</option>
+                <option value="household-chemicals">Chemia gospodarcza</option>
+                <option value="restaurant">Restauracja</option>
+                <option value="drugs">Papierosy/Kawa/Inne nałogi</option>
+                <option value="entertainment">Rozrywka</option>
+                <option value="renovation">Remont/Naprawa</option>
+                <option value="medicine">Lekarz/Leki</option>
+                <option value="gift">Prezenty</option>
+                <option value="outfit">Ubranie</option>
+                <option value="fuel">Paliwo</option>
+                <option value="pet">Zwierzak</option>
+                <option value="hobby">Hobby</option>
+                <option value="other">Inne</option>
+              </select>
+            </div>
+          </div>
+          <div class="commentOne">
+            <label for="comment">Opis</label>
+            <input
+              name="description"
+              type="text"
+              maxlength="60"
+              autocomplete="off"
+              id="comment"
+            />
+          </div>
+          <input
+            type="submit"
+            value="Dodaj transakcję"
+            class="btn"
+            id="submit"
+          />
+        </form>
+      </div>
+      <div id="alert"></div>
+      <div id="collection"></div>
+      <div id="resume">
+        <div class="balance"></div>
+      </div>
+    </div>
+    <script src="main.js"></script>
+  </body>
+</html>
