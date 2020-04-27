@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <script
+      src="https://kit.fontawesome.com/27497a9bbb.js"
+      crossorigin="anonymous"
+    ></script>
+    <link
+      href="//db.onlinewebfonts.com/c/f4d1593471d222ddebd973210265762a?family=Pokemon+Solid"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <title>Pokedex</title>
+  </head>
+  <body class="main-screen">
+    <div id="loader">
+      <img class="loader-image" src="imgs/pokeball.jpg" alt="pokeball" />
+      <div class="loader-text">Loading</div>
+    </div>
+    <div id="info"><div id="info-content">Turn screen into landscope</div></div>
+    <div id="container" class="dispalynone">
+      <div id="logo">
+        <img src="imgs/pokemon-logo.png" alt="Pokemon-logo" />
+      </div>
+      <div id="pokedex">
+        <img src="imgs/pokedex.png" alt="Pokedex" />
+        <div id="hourglass" class="displaynone"></div>
+        <button id="info-about-pokemon"><i class="fas fa-info"></i></button>
+        <button id="sound" data-on="true"><i class="fas fa-volume-up"></i></button>
+        
+        <div id="pokemon-name">
+          <input
+            type="text"
+            id="pokemon-name-input"
+            placeholder="Pokemon Name or ID"
+          />
+        </div>
+
+        <div id="alert"><p class="message">Pokemon Pokedex</p></div>
+        <button id="pokemon-list-prompt"><i class="fas fa-list-ol fa-2x"></i></button>
+
+        <button id="pokemon-search-btn"><i class="fas fa-search"></i></button>
+      </div>
+    </div>
+    <div id="results" class="displaynone"></div>
+    <div id="pokemon-list" class="displaynone"></div>
+    <div id="pokemon-items-list" class="displaynone">
+      <h2>Item List</h2>
+    </div>
+    
+    <script src="https://unpkg.com/pokeapi-js-wrapper/dist/index.js"></script>
+    <script src="ui.js"></script>
+    <script src="pokeapi.js"></script>
+    <script src="app.js"></script>
+  </body>
+</html>

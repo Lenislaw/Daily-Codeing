@@ -1,0 +1,130 @@
+@mixin darken-background($color) {
+  background: darken($color: $color, $amount: 20);
+}
+$bg-normal: #c2c2a1;
+$bg-fightng: #c03028;
+$bg-flying: skyblue;
+$bg-poison: #a040a0;
+$bg-ground: #e0c068;
+$bg-rock: #b8a038;
+$bg-bug: #a8b820;
+$bg-ghost: #705898;
+$bg-steel: #b8b8d0;
+$bg-fire: #ea1409;
+$bg-water: #6890f0;
+$bg-grass: #78c850;
+$bg-electric: #f8d030;
+$bg-psychic: #f85888;
+$bg-ice: #98d8d8;
+$bg-dragon: #7038f8;
+$bg-dark: #705848;
+$bg-fairy: #ee99ac;
+
+.normal {
+  background: $bg-normal;
+  &-dark {
+    @include darken-background($bg-normal);
+  }
+}
+.fighting {
+  background: $bg-fightng;
+  &-dark {
+    @include darken-background($bg-fightng);
+  }
+}
+.flying {
+  background: $bg-flying;
+  &-dark {
+    @include darken-background($bg-flying);
+  }
+}
+.poison {
+  background: $bg-poison;
+  &-dark {
+    @include darken-background($bg-poison);
+  }
+}
+.ground {
+  background: $bg-ground;
+  &-dark {
+    @include darken-background($bg-ground);
+  }
+}
+.rock {
+  background: $bg-rock;
+  &-dark {
+    @include darken-background($bg-rock);
+  }
+}
+.bug {
+  background: $bg-bug;
+  &-dark {
+    @include darken-background($bg-bug);
+  }
+}
+.ghost {
+  background: $bg-ghost;
+  &-dark {
+    @include darken-background($bg-ghost);
+  }
+}
+.steel {
+  background: $bg-steel;
+  &-dark {
+    @include darken-background($bg-steel);
+  }
+}
+.fire {
+  background: $bg-fire;
+  &-dark {
+    @include darken-background($bg-fire);
+  }
+}
+.water {
+  background: $bg-water;
+  &-dark {
+    @include darken-background($bg-water);
+  }
+}
+.grass {
+  background: $bg-grass;
+  &-dark {
+    @include darken-background($bg-grass);
+  }
+}
+.electric {
+  background: $bg-electric;
+  &-dark {
+    @include darken-background($bg-electric);
+  }
+}
+.psychic {
+  background: $bg-psychic;
+  &-dark {
+    @include darken-background($bg-psychic);
+  }
+}
+.ice {
+  background: $bg-ice;
+  &-dark {
+    @include darken-background($bg-ice);
+  }
+}
+.dragon {
+  background: $bg-dragon;
+  &-dark {
+    @include darken-background($bg-dragon);
+  }
+}
+.dark {
+  background: $bg-dark;
+  &-dark {
+    @include darken-background($bg-dark);
+  }
+}
+.fairy {
+  background: $bg-fairy;
+  &-dark {
+    @include darken-background($bg-fairy);
+  }
+}
